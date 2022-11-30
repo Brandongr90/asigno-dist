@@ -12,6 +12,6 @@
   
 <body>
   <app-root></app-root>
-<script src="runtime.faf0306f68892c02.js" type="module"></script><script src="polyfills.4c7c8365072c29fa.js" type="module"></script><script src="main.62b2b348c38b7c66.js" type="module"></script>
+<script src="runtime.faf0306f68892c02.js" type="module"></script><script src="polyfills.4c7c8365072c29fa.js" type="module"></script><script src="main.74f25fb4f7dbeb08.js" type="module"></script>
 
 </body></html>
