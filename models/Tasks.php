@@ -27,7 +27,7 @@ class Tasks extends Config {
         parent::set_names();
         // Encripta la contraseña recbidia y la manda a la BD
         $passencrypt = password_hash($pass, PASSWORD_DEFAULT);
-        $sql = "CALL insertUser(?, ?, ?, ?, ?, ?);";
+        $sql = "CALL insertUser(?,?,?,?,?,?);";
         $sql = $link->prepare($sql);
         $sql->bindValue(1, $name);
         $sql->bindValue(2, $email);
@@ -35,8 +35,7 @@ class Tasks extends Config {
         $sql->bindValue(4, $color);
         $sql->bindValue(5, $admin);
         $sql->bindValue(6, $photo);
-        $result['status'] = $sql->execute();
-        return true;
+        return $sql->execute();
     }
 
     // Obtiene sólo la vista de actividades permitidas ver para el usuario
